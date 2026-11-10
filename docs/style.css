@@ -1,0 +1,23 @@
+:root{--bg:#f7f4ee;--ink:#1d1c1a;--muted:#5e5a52;--rule:#ddd5c6;--accent:#8a6a2c;--quote:#efe8da;color-scheme:light dark}
+@media (prefers-color-scheme:dark){:root{--bg:#0f1420;--ink:#ebe6dc;--muted:#a9a397;--rule:#2a3244;--accent:#d2ad62;--quote:#161d2d}}
+*{box-sizing:border-box}
+html{background:var(--bg)}
+body{margin:0 auto;max-width:46rem;padding:2.5rem 1rem 3rem;color:var(--ink);background:var(--bg);font:400 1.06rem/1.65 "Source Serif 4",Georgia,serif;-webkit-font-smoothing:antialiased}
+a{color:var(--accent);text-decoration-thickness:1px;text-underline-offset:.18em}
+a:hover{text-decoration-thickness:2px}
+.langs{font:.85rem/1.4 system-ui,sans-serif;color:var(--muted);margin-bottom:2.2rem}
+.langs b{color:var(--ink);font-weight:600}
+h1{font:600 clamp(2.4rem,7vw,3.4rem)/1.05 "Cormorant Garamond",Georgia,serif;letter-spacing:.01em;margin:0 0 .8rem}
+h2{font:600 1.65rem/1.2 "Cormorant Garamond",Georgia,serif;margin:2.6rem 0 .8rem;padding-top:1.2rem;border-top:1px solid var(--rule)}
+h3{font:600 1.3rem/1.25 "Cormorant Garamond",Georgia,serif;margin:1.8rem 0 .4rem;color:var(--accent)}
+.tag{font-size:1.12rem;color:var(--muted);margin:0}
+blockquote{margin:0;padding:1.1rem 1.3rem;background:var(--quote);border-left:3px solid var(--accent);font-size:1.12rem}
+.lead{color:var(--muted);margin:.2rem 0 .6rem}
+.note{font:.85rem/1.4 system-ui,sans-serif;color:var(--muted)}
+.books,.audio{list-style:none;padding-left:0;margin:.4rem 0}
+.books li,.audio li{padding-left:1.1rem;position:relative}
+.books li::before,.audio li::before{content:'—';position:absolute;left:0;color:var(--muted)}
+.books li,.audio li{margin:.25rem 0}
+.aud{text-decoration:none;margin-left:.35rem;font-size:.9em}
+.links{line-height:2}
+footer{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--rule);font:.8rem system-ui,sans-serif;color:var(--muted)}
