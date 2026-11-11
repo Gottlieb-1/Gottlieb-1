@@ -21,3 +21,7 @@ blockquote{margin:0;padding:1.1rem 1.3rem;background:var(--quote);border-left:3p
 .aud{text-decoration:none;margin-left:.35rem;font-size:.9em}
 .links{line-height:2}
 footer{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--rule);font:.8rem system-ui,sans-serif;color:var(--muted)}
+.hero{display:flex;gap:1.6rem;align-items:center}
+.portrait{display:block;width:9.5rem;height:9.5rem;border-radius:50%;object-fit:cover;flex:none;border:1px solid var(--rule)}
+.hero h1{margin-bottom:.5rem}
+@media (max-width:560px){.hero{flex-direction:column;align-items:flex-start;gap:1.1rem}.portrait{width:7.5rem;height:7.5rem}}
