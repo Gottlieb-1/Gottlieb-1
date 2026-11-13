@@ -25,3 +25,9 @@ footer{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--rule);font:.8
 .portrait{display:block;width:9.5rem;height:9.5rem;border-radius:50%;object-fit:cover;flex:none;border:1px solid var(--rule)}
 .hero h1{margin-bottom:.5rem}
 @media (max-width:560px){.hero{flex-direction:column;align-items:flex-start;gap:1.1rem}.portrait{width:7.5rem;height:7.5rem}}
+.desc{margin:.1rem 0 .5rem}
+.desc summary{cursor:pointer;width:fit-content;font:.82rem/1.6 system-ui,sans-serif;color:var(--muted)}
+.desc summary:hover,.desc summary:focus-visible,.desc[open] summary{color:var(--accent)}
+.desc p{margin:0;padding:.3rem 0 .3rem .9rem;border-left:2px solid var(--rule);font-size:.97rem;line-height:1.6;overflow-wrap:break-word}
+.desc summary+p{margin-top:.35rem;padding-top:.45rem}
+.desc p:last-child{padding-bottom:.45rem;margin-bottom:.6rem}
